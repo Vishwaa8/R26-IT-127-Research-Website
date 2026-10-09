@@ -219,3 +219,254 @@ section { scroll-margin-top: 130px; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition: none !important; }
 }
+
+
+/* ========================================
+   RESEARCH TEAM — RESPONSIVE PROFILE CARDS
+   ======================================== */
+.team-section {
+  padding: 105px 0 115px;
+  background: var(--bg);
+}
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+}
+.team-card {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 25px 22px;
+  transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease;
+}
+.team-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--primary);
+  box-shadow: 0 18px 35px rgba(0, 0, 0, .09);
+}
+.team-card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+.team-avatar {
+  width: 74px;
+  height: 74px;
+  border-radius: 19px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  color: var(--primary);
+  font-weight: 800;
+  font-size: 24px;
+  letter-spacing: .5px;
+}
+.team-number {
+  color: var(--primary);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+.team-card h3 {
+  color: var(--text);
+  font-size: 18px;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+.team-id {
+  margin-top: 7px;
+  color: var(--primary);
+  font-size: 12px;
+  font-weight: 700;
+}
+.team-role {
+  color: var(--muted);
+  line-height: 1.65;
+  font-size: 13px;
+  margin: 19px 0 25px;
+  flex: 1;
+}
+.team-email {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  max-width: 100%;
+  color: var(--primary);
+  font-size: 12px;
+  font-weight: 650;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  border-bottom: 1px solid transparent;
+}
+.team-email:hover, .team-email:focus-visible { border-color: var(--primary); }
+.supervisor-panel {
+  margin-top: 30px;
+  padding: 28px 32px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+.supervisor-symbol {
+  display: grid;
+  place-items: center;
+  width: 66px;
+  height: 66px;
+  flex: 0 0 66px;
+  font-size: 30px;
+  background: var(--bg-alt);
+  border-radius: 16px;
+}
+.supervisor-panel h3 {
+  margin: 8px 0 5px;
+  font-size: 21px;
+  color: var(--text);
+}
+.supervisor-panel p { color: var(--muted); font-size: 13px; }
+@media (max-width: 1100px) {
+  .team-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 650px) {
+  .team-section { padding: 70px 0; }
+  .team-grid { grid-template-columns: 1fr; gap: 16px; }
+  .team-card { padding: 25px; }
+  .supervisor-panel { padding: 24px; align-items: flex-start; gap: 15px; }
+  .supervisor-symbol { width: 50px; height: 50px; flex-basis: 50px; font-size: 24px; }
+  .supervisor-panel h3 { font-size: 17px; }
+}
+
+/* Supervisors first, team members second */
+.team-group-heading {
+  color: var(--text);
+  font-size: 24px;
+  text-align: center;
+  margin: 0 0 28px;
+}
+.member-group-heading { margin-top: 68px; }
+.supervisor-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  max-width: 870px;
+  margin: 0 auto;
+}
+.supervisor-card { align-items: center; text-align: center; }
+.supervisor-photo {
+  width: 148px;
+  height: 148px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  border: 4px solid var(--border);
+  margin-bottom: 20px;
+  background: var(--bg-alt);
+}
+.supervisor-label {
+  display: inline-block;
+  padding: 7px 15px;
+  margin-bottom: 15px;
+  border-radius: 999px;
+  color: var(--primary);
+  background: var(--bg-alt);
+  font-weight: 750;
+  font-size: 12px;
+}
+.supervisor-card h3 { margin-bottom: 14px; }
+.supervisor-card .team-email { margin-top: auto; }
+@media (max-width: 650px) {
+  .supervisor-grid { grid-template-columns: 1fr; gap: 17px; }
+  .member-group-heading { margin-top: 48px; }
+  .supervisor-photo { width: 128px; height: 128px; }
+  .team-group-heading { font-size: 21px; }
+}
+
+/* Research members: matching the supervisors' circular portrait style */
+.member-grid { max-width: 870px; }
+.member-card { align-items: center; text-align: center; padding: 35px 25px; }
+.member-photo { display: block; flex-shrink: 0; }
+.member-photo-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 148px;
+  height: 148px;
+  flex-shrink: 0;
+  border: 4px solid var(--border);
+  border-radius: 50%;
+  background: var(--bg-alt);
+  color: var(--primary);
+  font-size: 38px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+.member-card .team-id { margin-top: 0; }
+.member-card .team-role { margin: 18px 0 24px; flex: 1; }
+.member-card .team-email { margin-top: auto; }
+@media (max-width: 650px) {
+  .member-photo-placeholder { width: 128px; height: 128px; font-size: 32px; }
+}
+
+
+/* Contact Us — CSS-only, responsive, and theme-aware */
+.contact-section { padding: 105px 0 100px; background: var(--bg-alt); }
+.contact-grid {
+  display: grid; grid-template-columns: repeat(2, minmax(0,1fr));
+  gap: 24px; max-width: 1000px; margin: 0 auto 32px;
+}
+.contact-card {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 22px; padding: 35px;
+  transition: transform .25s ease, border-color .25s ease;
+}
+.contact-card:hover { transform: translateY(-5px); border-color: var(--primary); }
+.contact-icon {
+  display: flex; align-items: center; justify-content: center;
+  width: 60px; height: 60px; background: var(--bg-alt);
+  border-radius: 16px; font-size: 29px; margin-bottom: 25px;
+}
+.contact-role {
+  display: inline-block; color: var(--primary); font-size: 12px;
+  font-weight: 700; letter-spacing: 1px; text-transform: uppercase;
+  margin-bottom: 12px;
+}
+.contact-card h3 { color: var(--text); font-size: 21px; line-height: 1.5; margin-bottom: 15px; }
+.contact-card a { color: var(--primary); font-size: 14px; overflow-wrap: anywhere; }
+.contact-card a:hover, .contact-card a:focus-visible { text-decoration: underline; }
+.contact-team-panel {
+  max-width: 1000px; margin: 0 auto; padding: 37px;
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 22px; display: flex; align-items: center;
+  justify-content: space-between; gap: 35px;
+}
+.contact-team-info { max-width: 600px; }
+.contact-team-info h3 { color: var(--text); font-size: 27px; margin: 12px 0; }
+.contact-team-info p { color: var(--muted); font-size: 14px; line-height: 1.8; }
+.contact-project-id { margin-top: 12px; font-weight: 700; }
+.contact-team-panel .btn { flex-shrink: 0; text-align: center; }
+.contact-university {
+  display: flex; flex-wrap: wrap; justify-content: center;
+  gap: 20px; padding-top: 40px; color: var(--muted); font-size: 13px;
+}
+@media (max-width: 800px) {
+  .contact-team-panel { flex-direction: column; align-items: flex-start; }
+}
+@media (max-width: 650px) {
+  .contact-section { padding: 70px 0; }
+  .contact-grid { grid-template-columns: 1fr; gap: 18px; }
+  .contact-card { padding: 28px 23px; }
+  .contact-card h3 { font-size: 19px; }
+  .contact-team-panel { padding: 28px 23px; }
+  .contact-team-panel .btn { width: 100%; }
+  .contact-university { flex-direction: column; align-items: center; text-align: center; gap: 13px; }
+}
