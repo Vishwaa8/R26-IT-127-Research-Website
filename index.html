@@ -13,17 +13,26 @@
   <title>Ceylon Railway | Research Project R26-IT-127</title>
 
   <link rel="stylesheet" href="css/style.css">
-  <script>
-    // Run early to prevent a saved anchor opening the page halfway down.
-    if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
-    if (location.hash) history.replaceState(null, '', location.pathname + location.search);
-    try {
-      document.documentElement.dataset.theme = localStorage.getItem('ceylonrail-theme') === 'dark' ? 'dark' : 'light';
-    } catch (_) {
-      document.documentElement.dataset.theme = 'light';
-    }
-  </script>
 
+  <script>
+
+    // Run early to prevent a saved anchor opening the page halfway down.
+
+    if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+
+    if (location.hash) history.replaceState(null, '', location.pathname + location.search);
+
+    try {
+
+      document.documentElement.dataset.theme = localStorage.getItem('ceylonrail-theme') === 'dark' ? 'dark' : 'light';
+
+    } catch (_) {
+
+      document.documentElement.dataset.theme = 'light';
+
+    }
+
+  </script>
 
 </head>
 
@@ -79,24 +88,31 @@
 
     </header>
 
-
-
     <main>
 
       <section id="home" class="hero-section" aria-labelledby="hero-title">
+
         <div class="container hero-content">
+
           <div class="hero-text">
+
             <h1 id="hero-title">Sri Lankan Railway Operations</h1>
+
             <p class="hero-subtitle">AI-Powered Intelligence for Smarter Railway Operations.</p>
+
             <div class="hero-actions">
+
               <a href="#domain" class="btn btn-primary">Explore Research <span aria-hidden="true">→</span></a>
+
               <a href="#about" class="btn btn-secondary">Meet Our Team</a>
+
             </div>
+
           </div>
+
         </div>
+
       </section>
-
-
 
       <section class="overview-section" aria-labelledby="overview-title">
 
@@ -160,283 +176,522 @@
 
       </section>
 
-
-
       <section id="domain" class="domain-section" aria-labelledby="domain-title">
+
         <div class="container">
+
           <div class="section-heading">
+
             <span class="section-label">RESEARCH DOMAIN · R26-IT-127</span>
+
             <h2 id="domain-title">Intelligent Railway Operations for Sri Lanka</h2>
+
             <p>Our proposed research explores how artificial intelligence, real-time data and optimization can support safer, more reliable and passenger-focused railway operations.</p>
+
           </div>
 
           <div class="domain-feature">
+
             <div class="domain-feature-copy">
+
               <span class="domain-overline">THE RESEARCH VISION</span>
+
               <h3>From reactive railway management to intelligent decision support.</h3>
+
               <p>Traditional railway operations face challenges with manual ticket inspections, limited real-time train information, unpredictable delays, fluctuating passenger demand and static capacity planning. Ceylon Railway investigates four complementary research components designed to turn railway data into actionable predictions and operational recommendations.</p>
+
             </div>
+
             <div class="domain-pillars" aria-label="Core research themes">
+
               <span>Ticket Security</span><span>Live Tracking</span><span>Smart Scheduling</span><span>Demand &amp; Capacity</span>
+
             </div>
+
           </div>
 
           <div class="domain-subheading">
+
             <span class="section-label">BACKGROUND &amp; CHALLENGES</span>
+
             <h3>Understanding the research problem</h3>
+
             <p>Our proposal studies identify several connected challenges in contemporary railway operations.</p>
+
           </div>
+
           <div class="domain-challenge-grid">
+
             <article class="domain-challenge"><span class="domain-challenge-icon" aria-hidden="true">🎫</span><h4>Manual ticket inspection</h4><p>Random checks can miss abnormal ticket reuse, concession misuse and suspicious resale behavior.</p></article>
+
             <article class="domain-challenge"><span class="domain-challenge-icon" aria-hidden="true">📍</span><h4>Uncertain train arrivals</h4><p>Static timetables and limited real-time visibility make unexpected train delays difficult to anticipate.</p></article>
+
             <article class="domain-challenge"><span class="domain-challenge-icon" aria-hidden="true">🚉</span><h4>Uneven passenger demand</h4><p>Peak-hour overcrowding and off-peak underutilization reduce passenger comfort and operational efficiency.</p></article>
+
           </div>
 
           <div class="domain-subheading">
+
             <span class="section-label">LITERATURE SURVEY &amp; RESEARCH GAP</span>
+
             <h3>Why an integrated approach matters</h3>
+
           </div>
+
           <div class="domain-insights">
+
             <article class="domain-insight-card"><span class="domain-small-label">EXISTING APPROACHES</span><h4>What prior research explores</h4><p>Published work covers secure digital ticket validation, behavioral fraud detection, GPS/IoT monitoring, deterministic train arrival estimation, classical demand forecasting and independent resource optimization.</p></article>
+
             <article class="domain-insight-card"><span class="domain-small-label">IDENTIFIED LIMITATIONS</span><h4>Where the gaps remain</h4><p>Important gaps include explainable fraud risk and inspection workload, real-time probabilistic delay estimation, spatial relationships in station demand, and the limited integration of forecasts with adaptive seat allocation.</p></article>
+
           </div>
 
           <div class="domain-subheading">
+
             <span class="section-label">OUR RESEARCH CONTRIBUTIONS</span>
+
             <h3>Four intelligent components</h3>
+
             <p>Each component addresses a specific railway problem while contributing to the overall proposed decision-support system.</p>
+
           </div>
+
           <div class="domain-research-grid">
+
             <article class="domain-research-card">
+
               <div class="domain-research-top"><span class="domain-research-icon" aria-hidden="true">🎫</span><span class="domain-research-number">01</span></div>
+
               <h4>Intelligent Ticket Fraud Detection</h4><p>Analyzes anonymized or synthetic ticket transactions to detect unusual usage patterns and support risk-aware passenger verification.</p>
+
               <div class="domain-research-tags"><span>Isolation Forest</span><span>One-Class SVM</span><span>Autoencoders</span><span>Risk Scoring</span></div>
+
               <span class="domain-research-owner">Muthukudaarachchi V.U · IT22126610</span>
+
             </article>
+
             <article class="domain-research-card">
+
               <div class="domain-research-top"><span class="domain-research-icon" aria-hidden="true">📍</span><span class="domain-research-number">02</span></div>
+
               <h4>Train Tracking &amp; Probabilistic Delay Prediction</h4><p>Combines GPS/IoT location data and railway operational records to estimate arrival times and predict delays under uncertain conditions.</p>
+
               <div class="domain-research-tags"><span>GPS / IoT</span><span>Random Forest</span><span>LSTM</span><span>Delay Probability</span></div>
+
               <span class="domain-research-owner">C.S. Didulantha · IT22051202</span>
+
             </article>
+
             <article class="domain-research-card">
+
               <div class="domain-research-top"><span class="domain-research-icon" aria-hidden="true">🗓️</span><span class="domain-research-number">03</span></div>
+
               <h4>Train Scheduling &amp; Capacity Management</h4><p>Investigates multi-objective schedule optimization using predicted demand, delay patterns and operational constraints to support railway planners.</p>
+
               <div class="domain-research-tags"><span>Multi-Objective Optimization</span><span>Scheduling</span><span>Capacity Planning</span></div>
+
               <span class="domain-research-owner">N.K.B.N.N. Narasinghe · IT22217240</span>
+
             </article>
+
             <article class="domain-research-card">
+
               <div class="domain-research-top"><span class="domain-research-icon" aria-hidden="true">📊</span><span class="domain-research-number">04</span></div>
+
               <h4>Demand Forecasting &amp; Adaptive Seat Allocation</h4><p>Forecasts temporal and station-network passenger demand, then proposes fairer dynamic seat distribution based on predicted needs.</p>
+
               <div class="domain-research-tags"><span>LSTM</span><span>GNN</span><span>MILP</span><span>Seat Utilization</span></div>
+
               <span class="domain-research-owner">D.M.N.T. Senawirathna · IT22151506</span>
+
             </article>
+
           </div>
 
           <div class="domain-subheading">
+
             <span class="section-label">RESEARCH METHODOLOGY</span>
+
             <h3>From data to decisions</h3>
+
           </div>
+
           <div class="domain-process" aria-label="Proposed research workflow">
+
             <div class="domain-process-step"><span>01</span><strong>Data Collection</strong><small>Ticketing, schedules, GPS, stations and demand</small></div>
+
             <div class="domain-process-step"><span>02</span><strong>Preprocessing</strong><small>Cleaning, integration and feature engineering</small></div>
+
             <div class="domain-process-step"><span>03</span><strong>AI &amp; Analytics</strong><small>Anomaly detection, forecasting and delay prediction</small></div>
+
             <div class="domain-process-step"><span>04</span><strong>Optimization</strong><small>Risk-aware inspection, scheduling and seat allocation</small></div>
+
             <div class="domain-process-step"><span>05</span><strong>Evaluation</strong><small>Prediction quality and operational measures</small></div>
+
           </div>
 
           <div class="domain-outcome-panel">
+
             <div><span class="section-label">EXPECTED RESEARCH OUTCOMES</span><h3>Smarter decisions. Better railway experiences.</h3><p>The proposed research aims to support targeted ticket inspections, more informative delay predictions, improved schedule planning, efficient seat utilization and passenger-oriented decision-making. Actual performance results will be reported after experimental validation.</p></div>
+
             <a href="#presentations" class="btn btn-primary">Explore Presentations <span aria-hidden="true">→</span></a>
+
           </div>
+
         </div>
+
       </section>
 
-
-
       <!-- Milestone dates below are planned dates transcribed from the project Gantt chart. -->
+
       <section id="milestones" class="milestones-section alt-section" aria-labelledby="milestones-title">
+
         <div class="container">
+
           <div class="section-heading">
+
             <span class="section-label">OUR RESEARCH JOURNEY · R26-IT-127</span>
+
             <h2 id="milestones-title">Research Milestones</h2>
+
             <p>Explore our planned project timeline and key stages, from topic registration to final evaluation.</p>
+
           </div>
 
           <div class="milestone-timeline">
-            <article class="milestone-entry">
-              <div class="milestone-marker" aria-hidden="true">01</div>
-              <div class="milestone-card">
-                <div class="milestone-card-heading"><span class="milestone-icon" aria-hidden="true">💡</span><span class="milestone-phase">RESEARCH FOUNDATION</span></div>
-                <h3>Research Topic Selection</h3>
-                <span class="milestone-date">Group registration: 20 October 2025 · TAF submission: 05 January 2026</span>
-                <p>Identification of railway operational challenges, selection of the research topic, and initial project planning.</p>
-              </div>
-            </article>
-            <article class="milestone-entry">
-              <div class="milestone-marker" aria-hidden="true">02</div>
-              <div class="milestone-card">
-                <div class="milestone-card-heading"><span class="milestone-icon" aria-hidden="true">📋</span><span class="milestone-phase">RESEARCH PROPOSAL</span></div>
-                <h3>Project Proposal &amp; Presentation</h3>
-                <span class="milestone-date">Proposal report: 15 March 2026 · Presentation: 16 March 2026</span>
-                <p>Development of individual research proposals covering literature surveys, research gaps, objectives, proposed methodologies, and system architecture.</p>
-                <a class="milestone-link" href="#presentations">Explore available presentation slides <span aria-hidden="true">→</span></a>
-              </div>
-            </article>
-            <article class="milestone-entry">
-              <div class="milestone-marker" aria-hidden="true">03</div>
-              <div class="milestone-card">
-                <div class="milestone-card-heading"><span class="milestone-icon" aria-hidden="true">🧩</span><span class="milestone-phase">FIRST PROGRESS REVIEW</span></div>
-                <h3>Progress Presentation 1 (PP1)</h3>
-                <span class="milestone-date">04–06 May 2026</span>
-                <p>Initial component development, dataset preparation, early experiments, and research implementation progress.</p>
-                <a class="milestone-link" href="presentations/pp1.pdf" target="_blank" rel="noopener noreferrer">View PP1 slides <span aria-hidden="true">↗</span></a>
-              </div>
-            </article>
-            <article class="milestone-entry">
-              <div class="milestone-marker" aria-hidden="true">04</div>
-              <div class="milestone-card">
-                <div class="milestone-card-heading"><span class="milestone-icon" aria-hidden="true">📊</span><span class="milestone-phase">SECOND PROGRESS REVIEW</span></div>
-                <h3>Progress Presentation 2 (PP2)</h3>
-                <span class="milestone-date">12–14 October 2026 · Web assessment planned: 11 October 2026</span>
-                <p>Further model development, integration activities, experiments, testing, and evaluation of the four proposed research components.</p>
-                <a class="milestone-link" href="presentations/pp2.pdf" target="_blank" rel="noopener noreferrer">View PP2 slides <span aria-hidden="true">↗</span></a>
-              </div>
-            </article>
-            <article class="milestone-entry">
-              <div class="milestone-marker" aria-hidden="true">05</div>
-              <div class="milestone-card">
-                <div class="milestone-card-heading"><span class="milestone-icon" aria-hidden="true">🎓</span><span class="milestone-phase">FINAL RESEARCH STAGE</span></div>
-                <h3>Final Evaluation &amp; Thesis Submission</h3>
-                <span class="milestone-date">Final presentation &amp; viva: 01 December 2026 · Final report: December 2026</span>
-                <p>Planned final system demonstration, research findings, individual dissertations, and final assessment activities.</p>
-                <span class="milestone-pending">Final presentation materials not yet available</span>
-              </div>
-            </article>
-          </div>
-          <div class="gantt-display">
-            <div class="gantt-heading"><h3>Project Gantt Chart</h3><p>Original planning chart showing research activities and scheduled assessments. Select the chart to view it at full resolution.</p></div>
-            <a href="assets/images/research-gantt-chart.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open the research Gantt chart full size">
-              <img src="assets/images/research-gantt-chart.jpg" alt="Research project Gantt chart covering October 2025 to December 2026" loading="lazy">
-            </a>
-          </div>
-          <p class="milestones-note">Dates shown are based on the project planning Gantt chart, not independently verified official assessment announcements. Please refer to current course notices for any changes.</p>
-        </div>
-      </section>
 
+            <article class="milestone-entry">
+
+              <div class="milestone-marker" aria-hidden="true">01</div>
+
+              <div class="milestone-card">
+
+                <div class="milestone-card-heading"><span class="milestone-icon" aria-hidden="true">💡</span><span class="milestone-phase">RESEARCH FOUNDATION</span></div>
+
+                <h3>Research Topic Selection</h3>
+
+                <span class="milestone-date">Group registration: 20 October 2025 · TAF submission: 05 January 2026</span>
+
+                <p>Identification of railway operational challenges, selection of the research topic, and initial project planning.</p>
+
+              </div>
+
+            </article>
+
+            <article class="milestone-entry">
+
+              <div class="milestone-marker" aria-hidden="true">02</div>
+
+              <div class="milestone-card">
+
+                <div class="milestone-card-heading"><span class="milestone-icon" aria-hidden="true">📋</span><span class="milestone-phase">RESEARCH PROPOSAL</span></div>
+
+                <h3>Project Proposal &amp; Presentation</h3>
+
+                <span class="milestone-date">Proposal report: 15 March 2026 · Presentation: 16 March 2026</span>
+
+                <p>Development of individual research proposals covering literature surveys, research gaps, objectives, proposed methodologies, and system architecture.</p>
+
+                <a class="milestone-link" href="#presentations">Explore available presentation slides <span aria-hidden="true">→</span></a>
+
+              </div>
+
+            </article>
+
+            <article class="milestone-entry">
+
+              <div class="milestone-marker" aria-hidden="true">03</div>
+
+              <div class="milestone-card">
+
+                <div class="milestone-card-heading"><span class="milestone-icon" aria-hidden="true">🧩</span><span class="milestone-phase">FIRST PROGRESS REVIEW</span></div>
+
+                <h3>Progress Presentation 1 (PP1)</h3>
+
+                <span class="milestone-date">04–06 May 2026</span>
+
+                <p>Initial component development, dataset preparation, early experiments, and research implementation progress.</p>
+
+                <a class="milestone-link" href="presentations/pp1.pdf" target="_blank" rel="noopener noreferrer">View PP1 slides <span aria-hidden="true">↗</span></a>
+
+              </div>
+
+            </article>
+
+            <article class="milestone-entry">
+
+              <div class="milestone-marker" aria-hidden="true">04</div>
+
+              <div class="milestone-card">
+
+                <div class="milestone-card-heading"><span class="milestone-icon" aria-hidden="true">📊</span><span class="milestone-phase">SECOND PROGRESS REVIEW</span></div>
+
+                <h3>Progress Presentation 2 (PP2)</h3>
+
+                <span class="milestone-date">12–14 October 2026 · Web assessment planned: 11 October 2026</span>
+
+                <p>Further model development, integration activities, experiments, testing, and evaluation of the four proposed research components.</p>
+
+                <a class="milestone-link" href="presentations/pp2.pdf" target="_blank" rel="noopener noreferrer">View PP2 slides <span aria-hidden="true">↗</span></a>
+
+              </div>
+
+            </article>
+
+            <article class="milestone-entry">
+
+              <div class="milestone-marker" aria-hidden="true">05</div>
+
+              <div class="milestone-card">
+
+                <div class="milestone-card-heading"><span class="milestone-icon" aria-hidden="true">🎓</span><span class="milestone-phase">FINAL RESEARCH STAGE</span></div>
+
+                <h3>Final Evaluation &amp; Thesis Submission</h3>
+
+                <span class="milestone-date">Final presentation &amp; viva: 01 December 2026 · Final report: December 2026</span>
+
+                <p>Planned final system demonstration, research findings, individual dissertations, and final assessment activities.</p>
+
+                <span class="milestone-pending">Final presentation materials not yet available</span>
+
+              </div>
+
+            </article>
+
+          </div>
+
+          <div class="gantt-display">
+
+            <div class="gantt-heading"><h3>Project Gantt Chart</h3><p>Original planning chart showing research activities and scheduled assessments. Select the chart to view it at full resolution.</p></div>
+
+            <a href="assets/images/research-gantt-chart.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open the research Gantt chart full size">
+
+              <img src="assets/images/research-gantt-chart.jpg" alt="Research project Gantt chart covering October 2025 to December 2026" loading="lazy">
+
+            </a>
+
+          </div>
+
+          <p class="milestones-note">Dates shown are based on the project planning Gantt chart, not independently verified official assessment announcements. Please refer to current course notices for any changes.</p>
+
+        </div>
+
+      </section>
 
       <section id="documents" class="documents-section" aria-labelledby="documents-title">
+
         <div class="container">
+
           <div class="section-heading">
+
             <span class="section-label">RESEARCH RESOURCES · R26-IT-127</span>
+
             <h2 id="documents-title">Research Documents</h2>
+
             <p>Explore our project documentation, individual research proposals and dissertations. Available PDFs can be viewed or downloaded directly.</p>
+
           </div>
 
           <div class="document-category">
+
             <div class="document-category-heading"><span class="document-category-icon" aria-hidden="true">📁</span><div><h3>Project Documentation</h3><p>Project-wide administrative and planning resources</p></div></div>
+
             <div class="documents-grid">
+
               <article class="document-card">
+
                 <div class="document-card-top"><span class="document-icon" aria-hidden="true">📋</span><span class="document-status available">Available</span></div>
+
                 <h4>Project Charter</h4><p>Project charter and group-level research planning document.</p>
+
                 <div class="document-actions"><a href="documents/project-charter/project-charter.pdf" class="document-btn document-btn-primary" target="_blank" rel="noopener noreferrer">View PDF ↗</a><a href="documents/project-charter/project-charter.pdf" class="document-btn document-btn-secondary" download>Download ↓</a></div>
+
               </article>
+
             </div>
+
           </div>
 
           <div class="document-category">
+
             <div class="document-category-heading"><span class="document-category-icon" aria-hidden="true">📑</span><div><h3>Individual Research Proposals</h3><p>Research problems, objectives, gaps and proposed approaches for each component</p></div></div>
+
             <div class="documents-grid">
+
               <article class="document-card">
+
                 <div class="document-card-top"><span class="document-icon" aria-hidden="true">📄</span><span class="document-status available">Available</span></div>
+
                 <h4>C.S. Didulantha</h4><p>Intelligent Real-Time Train Tracking and Probabilistic Delay Prediction</p>
+
                 <span class="document-id">IT22051202 · Proposal</span>
+
                 <div class="document-actions"><a href="documents/proposals/didulantha-proposal.pdf" class="document-btn document-btn-primary" target="_blank" rel="noopener noreferrer">View PDF ↗</a><a href="documents/proposals/didulantha-proposal.pdf" class="document-btn document-btn-secondary" download>Download ↓</a></div>
+
               </article>
+
               <article class="document-card">
+
                 <div class="document-card-top"><span class="document-icon" aria-hidden="true">📄</span><span class="document-status available">Available</span></div>
+
                 <h4>Muthukudaarachchi V.U</h4><p>Advanced Intelligent Ticket Fraud Detection and Risk-Aware Passenger Verification</p>
+
                 <span class="document-id">IT22126610 · Proposal</span>
+
                 <div class="document-actions"><a href="documents/proposals/muthukudaarachchi-proposal.pdf" class="document-btn document-btn-primary" target="_blank" rel="noopener noreferrer">View PDF ↗</a><a href="documents/proposals/muthukudaarachchi-proposal.pdf" class="document-btn document-btn-secondary" download>Download ↓</a></div>
+
               </article>
+
               <article class="document-card">
+
                 <div class="document-card-top"><span class="document-icon" aria-hidden="true">📄</span><span class="document-status available">Available</span></div>
+
                 <h4>D.M.N.T. Senawirathna</h4><p>Spatio-Temporal Demand Forecasting and Adaptive Seat Allocation</p>
+
                 <span class="document-id">IT22151506 · Proposal</span>
+
                 <div class="document-actions"><a href="documents/proposals/senevirathna-proposal.pdf" class="document-btn document-btn-primary" target="_blank" rel="noopener noreferrer">View PDF ↗</a><a href="documents/proposals/senevirathna-proposal.pdf" class="document-btn document-btn-secondary" download>Download ↓</a></div>
+
               </article>
+
               <article class="document-card">
+
                 <div class="document-card-top"><span class="document-icon" aria-hidden="true">📄</span><span class="document-status">Coming Soon</span></div>
+
                 <h4>N.K.B.N.N. Narasinghe</h4><p>Multi-Objective Train Scheduling and Capacity Management</p>
+
                 <span class="document-id">IT22217240 · Proposal</span>
+
                 <div class="document-actions"><span class="document-unavailable">Proposal will be added later</span></div>
+
               </article>
+
             </div>
+
           </div>
 
           <div class="document-category">
+
             <div class="document-category-heading"><span class="document-category-icon" aria-hidden="true">📚</span><div><h3>Individual Theses</h3><p>Available dissertations and forthcoming final research reports</p></div></div>
+
             <div class="documents-grid">
+
               <article class="document-card">
+
                 <div class="document-card-top"><span class="document-icon" aria-hidden="true">📘</span><span class="document-status available">Available</span></div>
+
                 <h4>Muthukudaarachchi V.U</h4><p>Advanced Intelligent Ticket Fraud Detection and Risk-Aware Passenger Verification</p>
+
                 <span class="document-id">IT22126610 · Individual Thesis</span>
+
                 <div class="document-actions"><a href="documents/thesis/member-3-thesis.pdf" class="document-btn document-btn-primary" target="_blank" rel="noopener noreferrer">View PDF ↗</a><a href="documents/thesis/member-3-thesis.pdf" class="document-btn document-btn-secondary" download>Download ↓</a></div>
+
               </article>
+
               <article class="document-card document-card-pending">
+
                 <div class="document-card-top"><span class="document-icon" aria-hidden="true">📘</span><span class="document-status">Coming Soon</span></div>
+
                 <h4>Other Individual Theses</h4><p>Remaining team members' dissertations will be uploaded when available and approved for sharing.</p>
+
                 <div class="document-actions"><span class="document-unavailable">Pending upload</span></div>
+
               </article>
+
             </div>
+
           </div>
+
         </div>
+
       </section>
 
-
       <section id="presentations" class="presentations-section" aria-labelledby="presentations-title">
+
         <div class="container">
+
           <div class="section-heading">
+
             <span class="section-label">RESEARCH PRESENTATIONS</span>
+
             <h2 id="presentations-title">Our Research Presentations</h2>
+
             <p>Explore the presentation slides from the Ceylon Railway research journey. Available slides can be viewed in your browser or downloaded as PDFs.</p>
+
           </div>
+
           <div class="presentation-grid">
+
             <article class="presentation-card">
+
               <div class="presentation-card-top"><span class="presentation-icon" aria-hidden="true">📋</span><span class="presentation-number">01</span></div>
+
               <h3>Proposal Presentation</h3>
+
               <p>Introduction to the research problem, objectives, research gaps and proposed methodology.</p>
+
               <div class="presentation-actions">
+
                 <a class="presentation-btn presentation-btn-primary" href="presentations/proposal.pdf" target="_blank" rel="noopener noreferrer" aria-label="View proposal presentation PDF">View PDF ↗</a>
+
                 <a class="presentation-btn presentation-btn-secondary" href="presentations/proposal.pdf" download="CeylonRail_Proposal_Presentation.pdf" aria-label="Download proposal presentation PDF">Download ↓</a>
+
               </div>
+
             </article>
+
             <article class="presentation-card">
+
               <div class="presentation-card-top"><span class="presentation-icon" aria-hidden="true">📊</span><span class="presentation-number">02</span></div>
+
               <h3>Progress Presentation 1 (PP1)</h3>
+
               <p>Research progress, initial development and implementation activities.</p>
+
               <div class="presentation-actions">
+
                 <a class="presentation-btn presentation-btn-primary" href="presentations/pp1.pdf" target="_blank" rel="noopener noreferrer" aria-label="View PP1 presentation PDF">View PDF ↗</a>
+
                 <a class="presentation-btn presentation-btn-secondary" href="presentations/pp1.pdf" download="CeylonRail_PP1.pdf" aria-label="Download PP1 presentation PDF">Download ↓</a>
+
               </div>
+
             </article>
+
             <article class="presentation-card">
+
               <div class="presentation-card-top"><span class="presentation-icon" aria-hidden="true">📈</span><span class="presentation-number">03</span></div>
+
               <h3>Progress Presentation 2 (PP2)</h3>
+
               <p>Advanced implementation progress, experiments and evaluation activities.</p>
+
               <div class="presentation-actions">
+
                 <a class="presentation-btn presentation-btn-primary" href="presentations/pp2.pdf" target="_blank" rel="noopener noreferrer" aria-label="View PP2 presentation PDF">View PDF ↗</a>
+
                 <a class="presentation-btn presentation-btn-secondary" href="presentations/pp2.pdf" download="CeylonRail_PP2.pdf" aria-label="Download PP2 presentation PDF">Download ↓</a>
+
               </div>
+
             </article>
+
             <article class="presentation-card">
+
               <div class="presentation-card-top"><span class="presentation-icon" aria-hidden="true">🎓</span><span class="presentation-number">04</span></div>
+
               <h3>Final Presentation</h3>
+
               <p>Final research outcomes, system demonstration, results and conclusions.</p>
+
               <div class="presentation-actions"><span class="presentation-coming-soon">Coming Soon</span></div>
+
             </article>
+
           </div>
+
         </div>
+
       </section>
 
       <section id="about" class="team-section">
@@ -463,7 +718,7 @@
 
               <span class="supervisor-label">Supervisor</span>
 
-              <h3>Chathurangika Kahandawaarachchi</h3>
+              <h3>Ms. Chathurangika Kahandawaarachchi</h3>
 
               <a class="team-email" href="mailto:chathurangika.k@sliit.lk">chathurangika.k@sliit.lk</a>
 
@@ -475,7 +730,7 @@
 
               <span class="supervisor-label">Co-Supervisor</span>
 
-              <h3>Uditha Dharmakeerthi</h3>
+              <h3>Mr. Uditha Dharmakeerthi</h3>
 
               <a class="team-email" href="mailto:uditha.d@sliit.lk">uditha.d@sliit.lk</a>
 
@@ -571,8 +826,6 @@
 
           </div>
 
-
-
           <div class="contact-grid">
 
             <article class="contact-card">
@@ -581,7 +834,7 @@
 
               <span class="contact-role">Research Supervisor</span>
 
-              <h3>Chathurangika Kahandawaarachchi</h3>
+              <h3>Ms. Chathurangika Kahandawaarachchi</h3>
 
               <a href="mailto:chathurangika.k@sliit.lk">chathurangika.k@sliit.lk</a>
 
@@ -593,15 +846,13 @@
 
               <span class="contact-role">Co-Supervisor</span>
 
-              <h3>Uditha Dharmakeerthi</h3>
+              <h3>Mr. Uditha Dharmakeerthi</h3>
 
               <a href="mailto:uditha.d@sliit.lk">uditha.d@sliit.lk</a>
 
             </article>
 
           </div>
-
-
 
           <div class="contact-team-panel">
 
@@ -621,58 +872,57 @@
 
           </div>
 
-
-
-          <div class="contact-university">
-
-            <span>📍 Sri Lanka Institute of Information Technology</span>
-
-            <span>🔬 IT4010 Research Project</span>
-
-            <span>🚆 CeylonRail AI</span>
-
-          </div>
-
         </div>
 
       </section>
 
     </main>
 
-
-
     <footer class="site-footer">
-
-      <div class="container footer-content">
-
-        <span>🚆 CeylonRail AI</span>
-
-        <p>IT4010 Research Project · R26-IT-127 · SLIIT</p>
-
-        <small>Academic research project — not an official Sri Lanka Railways operational platform.</small>
-
-      </div>
-
-    </footer>
+  <div class="container footer-content">
+    <a class="footer-brand" href="#home" aria-label="Ceylon Railway — Back to Home">
+      <img src="assets/images/ceylonrail-logo.png" alt="Ceylon Railway logo" width="48" height="48" loading="lazy">
+      <span>Ceylon Railway</span>
+    </a>
+    <p>IT4010 Research Project · R26-IT-127 · SLIIT</p>
+    <small>Academic research project — not an official Sri Lanka Railways operational platform.</small>
+  </div>
+</footer>
 
   </div>
 
   <script>
+
     (function () {
+
       const toggle = document.getElementById('theme-toggle');
+
       const root = document.documentElement;
+
       toggle.checked = root.dataset.theme === 'dark';
+
       toggle.addEventListener('change', function () {
+
         const theme = toggle.checked ? 'dark' : 'light';
+
         root.dataset.theme = theme;
+
         try { localStorage.setItem('ceylonrail-theme', theme); } catch (_) {}
+
       });
+
       // On direct entry or refresh, always show the home section.
-      window.addEventListener('load', function () {
-        window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+
+      window\.addEventListener('load', function () {
+
+        window\.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+
       }, { once: true });
+
     }());
+
   </script>
+
 </body>
 
 </html>
