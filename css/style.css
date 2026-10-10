@@ -99,13 +99,9 @@ section { scroll-margin-top: 130px; }
 
 .brand {
 
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 21px;
-  font-weight: 700; /* Bold */
-  color: var(--text);
-  white-space: nowrap;
+  display: inline-flex; align-items: center; gap: 10px;
+
+  font-size: 21px; font-weight: 400; color: var(--text); white-space: nowrap;
 
 }
 
@@ -1196,4 +1192,47 @@ html[data-theme="dark"] .site-wrapper {
     max-width: 420px;
   }
   .member-grid .member-card { padding: 25px 20px; }
+}
+
+
+/* Research presentation resources: PDF view and download */
+.presentations-section { padding: 105px 0 115px; background: var(--bg-alt); }
+.presentation-grid {
+  max-width: 1050px; margin: 0 auto;
+  display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 24px;
+}
+.presentation-card {
+  display: flex; flex-direction: column; min-width: 0;
+  padding: 32px; border: 1px solid var(--border); border-radius: 22px;
+  background: var(--surface); transition: transform .25s, border-color .25s;
+}
+.presentation-card:hover { transform: translateY(-5px); border-color: var(--primary); }
+.presentation-card-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 25px; }
+.presentation-icon {
+  display: grid; place-items: center; width: 60px; height: 60px;
+  border-radius: 16px; background: var(--bg-alt); font-size: 28px;
+}
+.presentation-number { color: var(--muted); font-weight: 800; font-size: 13px; }
+.presentation-card h3 { color: var(--text); font-size: 21px; line-height: 1.4; margin-bottom: 13px; }
+.presentation-card p { color: var(--muted); line-height: 1.8; font-size: 14px; flex-grow: 1; }
+.presentation-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 25px; }
+.presentation-btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-height: 43px; padding: 10px 16px; border-radius: 10px;
+  font-size: 13px; font-weight: 700; transition: transform .2s;
+}
+.presentation-btn:hover { transform: translateY(-2px); }
+.presentation-btn:focus-visible { outline: 3px solid var(--primary); outline-offset: 3px; }
+.presentation-btn-primary { background: var(--primary); color: #061727; }
+.presentation-btn-secondary { background: var(--bg-alt); color: var(--text); border: 1px solid var(--border); }
+.presentation-coming-soon {
+  display: inline-flex; align-items: center; min-height: 43px;
+  padding: 10px 16px; border-radius: 10px; border: 1px solid var(--border);
+  background: var(--bg-alt); color: var(--muted); font-size: 13px; font-weight: 700;
+}
+@media (max-width: 700px) {
+  .presentations-section { padding: 70px 0; }
+  .presentation-grid { grid-template-columns: 1fr; gap: 18px; }
+  .presentation-card { padding: 26px 22px; }
+  .presentation-card h3 { font-size: 19px; }
 }
