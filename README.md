@@ -12,7 +12,7 @@
 [![Technology](https://img.shields.io/badge/Frontend-HTML%20%7C%20CSS%20%7C%20JavaScript-087AA8?style=flat-square)](#technology-stack)
 [![Institution](https://img.shields.io/badge/Institution-SLIIT-087AA8?style=flat-square)](https://www.sliit.lk/)
 
-**[GitHub Repository](https://github.com/Vishwaa8/R26-IT-127-Research-Website)** · **Live Website: Coming soon**
+**[GitHub Repository](https://github.com/Vishwaa8/R26-IT-127-Research-Website)** · **Submission format: ZIP (offline website)**
 
 </div>
 
@@ -53,7 +53,7 @@ The website describes **proposed research approaches** and provides access to av
 - **Research Milestones:** Planned project timeline and an interactive link to the Gantt chart image.
 - **Research Documents:** View/download links for available project charter, individual proposals, and thesis files.
 - **Presentations:** View/download links for Proposal, PP1, and PP2 slides; final presentation placeholder.
-- **Research Team:** Supervisor, co-supervisor, and all four researchers.
+- **Research Team:** Supervisor, co-supervisor, and all four researchers with profile photographs.
 - **Contact:** Academic contacts and research inquiry link.
 - **Appearance:** Responsive design with light/dark theme selection retained in browser local storage.
 
@@ -67,7 +67,7 @@ The website describes **proposed research approaches** and provides access to av
 | User preferences | Browser `localStorage` (theme preference) |
 | Development | Visual Studio Code, Live Server |
 | Version control | Git, GitHub, GitHub Desktop |
-| Planned hosting | GitHub Pages |
+| Submission | ZIP archive containing the complete static website |
 
 **Architecture:** Static frontend website; no backend server or database is required to run the showcase site.
 
@@ -83,7 +83,10 @@ R26-IT-127-Research-Website/
 │       ├── research-gantt-chart.jpg
 │       ├── supervisor.jpeg
 │       ├── co-supervisor.jpeg
-│       └── muthukudaarachchi.PNG
+│       ├── narasinghe.jpg
+│       ├── didulantha.jpg
+│       ├── muthukudaarachchi.PNG
+│       └── senevirathna.jpg
 ├── css/
 │   └── style.css
 ├── documents/
@@ -103,20 +106,20 @@ R26-IT-127-Research-Website/
 └── README.md
 ```
 
-> The structure above lists the files referenced by the current website. Additional researchers' proposals, theses, photos, and final presentation materials can be added when available and approved for public sharing. File names and letter case must match the links in `index.html` exactly.
+> The structure above lists the files referenced by the current website. Additional researchers' proposals, theses, and final presentation materials can be added when available and approved for public sharing. File names and letter case must match the links in `index.html` exactly.
 
-## 🚀 Run Locally
+## 💻 Run Locally
 
-1. Clone the repository:
+1. Download or extract the submitted `R26-IT-127-Research-Website.zip` archive. Alternatively, clone the GitHub repository:
 
    ```bash
    git clone https://github.com/Vishwaa8/R26-IT-127-Research-Website.git
    ```
 
-2. Open the project folder in **Visual Studio Code**.
-3. Ensure the required files are in `assets/`, `documents/`, and `presentations/`.
-4. Open `index.html` using the **Live Server** extension, or open it directly in a browser.
-5. Test all navigation links, PDF buttons, the Gantt chart, and light/dark mode.
+2. Open the extracted `R26-IT-127-Research-Website` folder.
+3. Open `index.html` directly in a modern web browser. For development and testing, open the folder in **Visual Studio Code** and use **Live Server**.
+4. Keep the folder structure unchanged so linked images, CSS, and PDFs load correctly.
+5. Test navigation links, PDF buttons, Gantt chart, team photographs, and light/dark mode.
 
 No package installation or build command is necessary.
 
@@ -156,15 +159,31 @@ The website includes a project Gantt chart and planned milestones, including:
 | Muthukudaarachchi V.U | IT22126610 | Ticket Fraud Detection and Passenger Verification |
 | D.M.N.T. Senevirathna | IT22151506 | Demand Forecasting and Seat Allocation |
 
-## 📸 Website Screenshots
+## 📱 Responsive Design and Testing
 
-Screenshots will be added after final UI testing. Recommended captures: **Home**, **Research Domain**, **Milestones/Gantt Chart**, **Documents**, and **Research Team**.
+The site uses responsive CSS layouts for desktops, tablets, and mobile devices. The design includes a responsive navigation bar, research cards, document grids, team member cards, and a compact Gantt chart display.
 
-## 🚢 Deployment
+Recommended checks before submission:
 
-**Status:** Public site URL to be added after GitHub Pages deployment.
+- **Desktop:** 1440 × 900
+- **Tablet:** 768 × 1024
+- **Mobile:** 390 × 844 or 440 × 956
+- Verify that no content is cut off or requires unintended horizontal scrolling.
+- Open each PDF and the Gantt chart image from the **extracted submission folder**.
+- Verify both light and dark themes.
 
-For a standard static GitHub Pages setup: go to **Repository Settings → Pages**, select **Deploy from a branch**, choose `main` and `/(root)`, and save. Wait for GitHub Pages to publish, then test the live site and update the link at the top of this README.
+## 📦 ZIP Submission Instructions
+
+The required submission is a **ZIP archive of the website**, not a publicly hosted URL. GitHub is used for source control and version history; a GitHub Pages deployment is not required for this submission.
+
+1. Save the final `index.html`, `css/style.css`, and `README.md`.
+2. Confirm that all required assets, research documents, and presentation PDFs are present.
+3. Create a clean copy of the project folder. Exclude development-only files such as `.git/`, `.vscode/`, and temporary archives.
+4. Compress the folder as `R26-IT-127-Research-Website.zip` (or use the submission system's required filename).
+5. Extract the ZIP into a different folder and open `index.html` to confirm the website works independently of the original project location.
+6. Verify the upload size and any additional requirements in the official submission instructions.
+
+> **Note:** Content marked *Coming Soon* is not yet included in the repository. The website is an informational research showcase; the individual AI/optimization model implementations are outside this static website.
 
 ## 📫 Contact
 
