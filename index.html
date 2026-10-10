@@ -1,276 +1,529 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
   <meta charset="UTF-8">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <meta name="description" content="CeylonRail AI – AI-Driven Intelligent Railway Operations System for Sri Lanka. SLIIT Research Project R26-IT-127.">
-  <title>CeylonRail AI | Research Project R26-IT-127</title>
+
+  <title>Ceylon Railway | Research Project R26-IT-127</title>
+
   <link rel="stylesheet" href="css/style.css">
+  <script>
+    // Run early to prevent a saved anchor opening the page halfway down.
+    if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+    if (location.hash) history.replaceState(null, '', location.pathname + location.search);
+    try {
+      document.documentElement.dataset.theme = localStorage.getItem('ceylonrail-theme') === 'dark' ? 'dark' : 'light';
+    } catch (_) {
+      document.documentElement.dataset.theme = 'light';
+    }
+  </script>
+
+
 </head>
+
 <body>
-  <!-- CSS-only theme switching; unchecked = dark mode -->
-  <input type="checkbox" id="theme-toggle" class="theme-checkbox" aria-label="Switch to light mode">
+
+  <!-- Default light; checked = dark. Small JS remembers visitor choice. -->
+
+  <input type="checkbox" id="theme-toggle" class="theme-checkbox" aria-label="Enable dark mode">
+
   <div class="site-wrapper">
+
     <header class="site-header">
+
       <div class="container nav-container">
-        <a href="#home" class="brand" aria-label="CeylonRail AI Home">
-          <span class="brand-icon" aria-hidden="true">🚆</span>
-          <span>CeylonRail <strong>AI</strong></span>
+
+        <a href="#home" class="brand" aria-label="Ceylon Railway Home">
+
+          <img class="navbar-logo" src="assets/images/ceylonrail-logo.png" alt="CeylonRail AI logo" width="48" height="48">
+
+          <span>Ceylon Railway</span>
+
         </a>
+
         <nav class="main-nav" aria-label="Main navigation">
+
           <a href="#home">Home</a>
+
           <a href="#domain">Domain</a>
+
           <a href="#milestones">Milestones</a>
+
           <a href="#documents">Documents</a>
+
           <a href="#presentations">Presentations</a>
+
           <a href="#about">About Us</a>
+
           <a href="#contact">Contact</a>
+
         </nav>
+
         <label for="theme-toggle" class="theme-button" title="Switch dark/light mode">
+
           <span class="sun-icon" aria-hidden="true">☀️</span>
+
           <span class="moon-icon" aria-hidden="true">🌙</span>
+
           <span>Theme</span>
+
         </label>
+
       </div>
+
     </header>
 
+
+
     <main>
-      <section id="home" class="hero-section">
+
+      <section id="home" class="hero-section" aria-labelledby="hero-title">
         <div class="container hero-content">
           <div class="hero-text">
-            <span class="eyebrow">SLIIT RESEARCH PROJECT · R26-IT-127</span>
-            <h1>Transforming Railway Operations with <span>Artificial Intelligence.</span></h1>
-            <p class="hero-description">
-              CeylonRail AI is an academic research project exploring intelligent,
-              data-driven solutions to improve railway operational efficiency,
-              passenger services, revenue protection and decision-making in Sri Lanka.
-            </p>
+            <h1 id="hero-title">Sri Lankan Railway Operations</h1>
+            <p class="hero-subtitle">AI-Powered Intelligence for Smarter Railway Operations.</p>
             <div class="hero-actions">
               <a href="#domain" class="btn btn-primary">Explore Research <span aria-hidden="true">→</span></a>
               <a href="#about" class="btn btn-secondary">Meet Our Team</a>
             </div>
-            <div class="hero-metadata">
-              <span>🎓 Sri Lanka Institute of Information Technology</span>
-              <span>📍 Sri Lanka</span>
-            </div>
-          </div>
-          <div class="hero-visual">
-            <div class="rail-card">
-              <span class="rail-card-label">CEYLONRAIL AI</span>
-              <span class="rail-emoji" aria-hidden="true">🚆</span>
-              <h2>Intelligent Railway Operations</h2>
-              <p>Predict · Optimize · Verify · Improve</p>
-              <div class="visual-line"></div>
-              <div class="visual-tags"><span>AI Research</span><span>Decision Support</span></div>
-            </div>
           </div>
         </div>
       </section>
+
+
 
       <section class="overview-section" aria-labelledby="overview-title">
+
         <div class="container">
+
           <div class="section-heading">
+
             <span class="section-label">OUR RESEARCH</span>
+
             <h2 id="overview-title">Four Areas. One Intelligent Railway Vision.</h2>
+
             <p>Our research investigates how artificial intelligence and optimization can support more informed railway operational decisions.</p>
+
           </div>
+
           <div class="component-grid">
+
             <article class="component-card">
+
               <span class="component-number">01</span><span class="component-icon" aria-hidden="true">🎫</span>
+
               <h3>Ticket Fraud Detection</h3>
+
               <p>Intelligent ticket fraud detection and risk-aware passenger verification.</p>
+
             </article>
+
             <article class="component-card">
+
               <span class="component-number">02</span><span class="component-icon" aria-hidden="true">📍</span>
+
               <h3>Train Tracking &amp; Delay Prediction</h3>
+
               <p>Real-time train tracking and probabilistic delay prediction research.</p>
+
             </article>
+
             <article class="component-card">
+
               <span class="component-number">03</span><span class="component-icon" aria-hidden="true">🗓️</span>
+
               <h3>Train Scheduling</h3>
+
               <p>Multi-objective optimization for train scheduling and capacity management.</p>
+
             </article>
+
             <article class="component-card">
+
               <span class="component-number">04</span><span class="component-icon" aria-hidden="true">📊</span>
+
               <h3>Demand Forecasting</h3>
+
               <p>Spatio-temporal passenger demand forecasting and adaptive seat allocation.</p>
+
             </article>
+
           </div>
+
         </div>
+
       </section>
+
+
 
       <section id="domain" class="domain-section" aria-labelledby="domain-title">
+
         <div class="container">
+
           <div class="section-heading">
+
             <span class="section-label">RESEARCH DOMAIN</span>
+
             <h2 id="domain-title">Exploring Intelligent Railway Operations</h2>
+
             <p>CeylonRail AI investigates how artificial intelligence, predictive analytics and optimization can support efficient, reliable and passenger-focused railway operations in Sri Lanka.</p>
+
           </div>
+
           <div class="domain-grid">
+
             <article class="domain-card">
+
               <span class="domain-icon" aria-hidden="true">📚</span>
+
               <h3>Literature Survey</h3>
+
               <p>The research considers existing approaches to railway demand forecasting, intelligent transportation, operational optimization and data-driven decision-support systems.</p>
+
             </article>
+
             <article class="domain-card">
+
               <span class="domain-icon" aria-hidden="true">🔍</span>
+
               <h3>Research Gap</h3>
+
               <p>Existing approaches provide limited integration between passenger demand forecasting and operational decision-making, uncertainty-aware railway analytics and fairness-aware capacity allocation.</p>
+
             </article>
+
             <article class="domain-card">
+
               <span class="domain-icon" aria-hidden="true">⚠️</span>
+
               <h3>Research Problem</h3>
+
               <p>Railway operations face challenges involving unpredictable passenger demand, inefficient capacity utilization, overcrowding, operational uncertainty and limited predictive decision support.</p>
+
             </article>
+
             <article class="domain-card">
+
               <span class="domain-icon" aria-hidden="true">🎯</span>
+
               <h3>Research Objectives</h3>
+
               <p>To investigate an integrated AI-driven decision-support framework that improves railway operational efficiency, passenger service quality, fraud mitigation and fairness under uncertainty.</p>
+
             </article>
+
             <article class="domain-card">
+
               <span class="domain-icon" aria-hidden="true">⚙️</span>
+
               <h3>Research Methodology</h3>
+
               <p>The research investigates data collection, preprocessing, feature engineering, model development, predictive analytics, optimization, simulation and experimental evaluation.</p>
+
             </article>
+
             <article class="domain-card">
+
               <span class="domain-icon" aria-hidden="true">💻</span>
+
               <h3>Technologies Used</h3>
+
               <p>The research platform uses React and JavaScript for its frontend, Node.js for backend services and Python for AI, machine learning, forecasting and optimization experiments.</p>
+
             </article>
+
           </div>
+
         </div>
+
       </section>
+
+
 
       <!-- These sections will be populated from confirmed project documents. -->
+
       <section id="milestones" class="placeholder-section alt-section">
+
         <div class="container">
+
           <span class="section-label">OUR JOURNEY</span>
+
           <h2>Research Milestones</h2>
+
           <p>Project proposal, progress presentations, final assessment and viva details will be added with their confirmed dates and marking allocations.</p>
+
         </div>
+
       </section>
+
       <section id="documents" class="placeholder-section">
+
         <div class="container">
+
           <span class="section-label">RESEARCH RESOURCES</span>
+
           <h2>Documents</h2>
+
           <p>Project charter, research proposals, checklists and final reports will be linked here once the shareable versions are collected.</p>
+
         </div>
+
       </section>
+
       <section id="presentations" class="placeholder-section alt-section">
+
         <div class="container">
+
           <span class="section-label">PRESENTATIONS</span>
+
           <h2>Presentation Slides</h2>
+
           <p>Proposal, Progress Presentation 1, Progress Presentation 2 and final presentation slides will be listed here as available.</p>
+
         </div>
+
       </section>
+
       <section id="about" class="team-section">
+
         <div class="container">
+
           <div class="section-heading">
+
             <span class="section-label">RESEARCH TEAM · R26-IT-127</span>
+
             <h2>Meet Our Research Team</h2>
+
             <p>Meet the supervisors and four researchers behind CeylonRail AI at the Sri Lanka Institute of Information Technology.</p>
+
           </div>
+
           <h3 class="team-group-heading">Research Supervisors</h3>
+
           <div class="supervisor-grid">
+
             <article class="team-card supervisor-card">
+
               <img class="supervisor-photo" src="assets/images/supervisor.jpeg" alt="Portrait of Chathurangika Kahandawaarachchi" width="148" height="148" loading="lazy">
+
               <span class="supervisor-label">Supervisor</span>
+
               <h3>Chathurangika Kahandawaarachchi</h3>
+
               <a class="team-email" href="mailto:chathurangika.k@sliit.lk">chathurangika.k@sliit.lk</a>
+
             </article>
+
             <article class="team-card supervisor-card">
+
               <img class="supervisor-photo" src="assets/images/co-supervisor.jpeg" alt="Portrait of Uditha Dharmakeerthi" width="148" height="148" loading="lazy">
+
               <span class="supervisor-label">Co-Supervisor</span>
+
               <h3>Uditha Dharmakeerthi</h3>
+
               <a class="team-email" href="mailto:uditha.d@sliit.lk">uditha.d@sliit.lk</a>
+
             </article>
+
           </div>
+
           <h3 class="team-group-heading member-group-heading">Research Team Members</h3>
+
           <div class="supervisor-grid member-grid">
+
             <article class="team-card supervisor-card member-card">
+
               <span class="member-photo-placeholder" aria-label="Photo pending for N.K.B.N.N. Narasinghe" role="img">NN</span>
+
               <span class="supervisor-label">Member 01</span>
+
               <h3>N.K.B.N.N. Narasinghe</h3>
+
               <span class="team-id">IT22217240</span>
+
               <p class="team-role">Multi-Objective Train Scheduling and Capacity Management</p>
+
               <a class="team-email" href="mailto:it22217240@my.sliit.lk">it22217240@my.sliit.lk</a>
+
             </article>
+
             <article class="team-card supervisor-card member-card">
+
               <span class="member-photo-placeholder" aria-label="Photo pending for C.S. Didulantha" role="img">CD</span>
+
               <span class="supervisor-label">Member 02</span>
+
               <h3>C.S. Didulantha</h3>
+
               <span class="team-id">IT22051202</span>
+
               <p class="team-role">Intelligent Real-Time Train Tracking and Probabilistic Delay Prediction</p>
+
               <a class="team-email" href="mailto:it22051202@my.sliit.lk">it22051202@my.sliit.lk</a>
+
             </article>
+
             <article class="team-card supervisor-card member-card">
+
               <img class="supervisor-photo member-photo" src="assets/images/muthukudaarachchi.PNG" alt="Portrait of Muthukudaarachchi V.U" width="148" height="148" loading="lazy">
+
               <span class="supervisor-label">Member 03</span>
+
               <h3>Muthukudaarachchi V.U</h3>
+
               <span class="team-id">IT22126610</span>
+
               <p class="team-role">Advanced Intelligent Ticket Fraud Detection and Risk-Aware Passenger Verification</p>
+
               <a class="team-email" href="mailto:it22126610@my.sliit.lk">it22126610@my.sliit.lk</a>
+
             </article>
+
             <article class="team-card supervisor-card member-card">
+
               <span class="member-photo-placeholder" aria-label="Photo pending for D.M.N.T. Senevirathna" role="img">DS</span>
+
               <span class="supervisor-label">Member 04</span>
+
               <h3>D.M.N.T. Senevirathna</h3>
+
               <span class="team-id">IT22151506</span>
+
               <p class="team-role">Spatio-Temporal Demand Forecasting and Adaptive Seat Allocation</p>
+
               <a class="team-email" href="mailto:it22151506@my.sliit.lk">it22151506@my.sliit.lk</a>
+
             </article>
+
           </div>
+
         </div>
+
       </section>
+
       <section id="contact" class="contact-section" aria-labelledby="contact-title">
+
         <div class="container">
+
           <div class="section-heading">
+
             <span class="section-label">GET IN TOUCH</span>
+
             <h2 id="contact-title">Contact Our Research Team</h2>
+
             <p>Have questions about CeylonRail AI? Contact our academic supervisors or the research team for project-related inquiries.</p>
+
           </div>
+
+
 
           <div class="contact-grid">
+
             <article class="contact-card">
+
               <span class="contact-icon" aria-hidden="true">🎓</span>
+
               <span class="contact-role">Research Supervisor</span>
+
               <h3>Chathurangika Kahandawaarachchi</h3>
+
               <a href="mailto:chathurangika.k@sliit.lk">chathurangika.k@sliit.lk</a>
+
             </article>
+
             <article class="contact-card">
+
               <span class="contact-icon" aria-hidden="true">🎓</span>
+
               <span class="contact-role">Co-Supervisor</span>
+
               <h3>Uditha Dharmakeerthi</h3>
+
               <a href="mailto:uditha.d@sliit.lk">uditha.d@sliit.lk</a>
+
             </article>
+
           </div>
+
+
 
           <div class="contact-team-panel">
+
             <div class="contact-team-info">
+
               <span class="section-label">RESEARCH TEAM</span>
+
               <h3>Let's Connect</h3>
+
               <p>Our four-member team researches AI-driven intelligent railway operations as part of the IT4010 Research Project at SLIIT.</p>
+
               <p class="contact-project-id">Project ID: R26-IT-127</p>
+
             </div>
+
             <a class="btn btn-primary" href="mailto:it22126610@my.sliit.lk?subject=CeylonRail%20AI%20Research%20Inquiry">✉ Contact Research Team</a>
+
           </div>
+
+
 
           <div class="contact-university">
+
             <span>📍 Sri Lanka Institute of Information Technology</span>
+
             <span>🔬 IT4010 Research Project</span>
+
             <span>🚆 CeylonRail AI</span>
+
           </div>
+
         </div>
+
       </section>
+
     </main>
 
+
+
     <footer class="site-footer">
+
       <div class="container footer-content">
+
         <span>🚆 CeylonRail AI</span>
+
         <p>IT4010 Research Project · R26-IT-127 · SLIIT</p>
+
         <small>Academic research project — not an official Sri Lanka Railways operational platform.</small>
+
       </div>
+
     </footer>
+
   </div>
+
+  <script>
+    (function () {
+      const toggle = document.getElementById('theme-toggle');
+      const root = document.documentElement;
+      toggle.checked = root.dataset.theme === 'dark';
+      toggle.addEventListener('change', function () {
+        const theme = toggle.checked ? 'dark' : 'light';
+        root.dataset.theme = theme;
+        try { localStorage.setItem('ceylonrail-theme', theme); } catch (_) {}
+      });
+      // On direct entry or refresh, always show the home section.
+      window.addEventListener('load', function () {
+        window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+      }, { once: true });
+    }());
+  </script>
 </body>
+
 </html>
