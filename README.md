@@ -12,7 +12,7 @@
 [![Technology](https://img.shields.io/badge/Frontend-HTML%20%7C%20CSS%20%7C%20JavaScript-087AA8?style=flat-square)](#technology-stack)
 [![Institution](https://img.shields.io/badge/Institution-SLIIT-087AA8?style=flat-square)](https://www.sliit.lk/)
 
-**[GitHub Repository](https://github.com/Vishwaa8/R26-IT-127-Research-Website)** · **Submission format: ZIP (offline website)**
+**[🌐 Live Website](https://ceylon-railway.vercel.app)** · **[GitHub Repository](https://github.com/Vishwaa8/R26-IT-127-Research-Website)** · **Submission: ZIP Archive**
 
 </div>
 
@@ -67,9 +67,12 @@ The website describes **proposed research approaches** and provides access to av
 | User preferences | Browser `localStorage` (theme preference) |
 | Development | Visual Studio Code, Live Server |
 | Version control | Git, GitHub, GitHub Desktop |
+| Hosting | Vercel (static website deployment) |
 | Submission | ZIP archive containing the complete static website |
 
 **Architecture:** Static frontend website; no backend server or database is required to run the showcase site.
+
+**Hosting:** Vercel (automatically deploys new commits pushed to the connected `main` branch).
 
 ## 📁 Project Structure
 
@@ -107,6 +110,12 @@ R26-IT-127-Research-Website/
 ```
 
 > The structure above lists the files referenced by the current website. Additional researchers' proposals, theses, and final presentation materials can be added when available and approved for public sharing. File names and letter case must match the links in `index.html` exactly.
+
+## 🔗 Live Website
+
+**Website:** https://ceylon-railway.vercel.app
+
+The research showcase is hosted on **Vercel** and linked to the GitHub repository. Changes committed and pushed to the connected `main` branch are deployed automatically. The required university submission remains a **ZIP archive**; the live link is an additional way to view the site.
 
 ## 💻 Run Locally
 
@@ -152,12 +161,12 @@ The website includes a project Gantt chart and planned milestones, including:
 **Supervisor:** Ms. Chathurangika Kahandawaarachchi — `chathurangika.k@sliit.lk`  
 **Co-Supervisor:** Mr. Uditha Dharmakeerthi — `uditha.d@sliit.lk`
 
-| Member | Student ID | Research Area |
-|---|---|---|
-| N.K.B.N.N. Narasinghe | IT22217240 | Train Scheduling and Capacity Management |
-| C.S. Didulantha | IT22051202 | Real-Time Tracking and Delay Prediction |
-| Muthukudaarachchi V.U | IT22126610 | Ticket Fraud Detection and Passenger Verification |
-| D.M.N.T. Senevirathna | IT22151506 | Demand Forecasting and Seat Allocation |
+| Member | Student ID | Research Area | Contact Email |
+|---|---|---|---|
+| N.K.B.N.N. Narasinghe | IT22217240 | Train Scheduling and Capacity Management | [it22217240@my.sliit.lk](mailto:it22217240@my.sliit.lk) |
+| C.S. Didulantha | IT22051202 | Real-Time Tracking and Delay Prediction | [it22051202@my.sliit.lk](mailto:it22051202@my.sliit.lk) |
+| Muthukudaarachchi V.U | IT22126610 | Ticket Fraud Detection and Passenger Verification | [it22126610@my.sliit.lk](mailto:it22126610@my.sliit.lk) |
+| D.M.N.T. Senevirathna | IT22151506 | Demand Forecasting and Seat Allocation | [it22151506@my.sliit.lk](mailto:it22151506@my.sliit.lk) |
 
 ## 📱 Responsive Design and Testing
 
@@ -174,7 +183,7 @@ Recommended checks before submission:
 
 ## 📦 ZIP Submission Instructions
 
-The required submission is a **ZIP archive of the website**, not a publicly hosted URL. GitHub is used for source control and version history; a GitHub Pages deployment is not required for this submission.
+The required university submission is a **ZIP archive of the website**. The project is **also hosted on Vercel** for convenient viewing; the live website does not replace the ZIP submission.
 
 1. Save the final `index.html`, `css/style.css`, and `README.md`.
 2. Confirm that all required assets, research documents, and presentation PDFs are present.
@@ -187,7 +196,19 @@ The required submission is a **ZIP archive of the website**, not a publicly host
 
 ## 📫 Contact
 
-For academic project inquiries, use the contacts in the [Research Team](#-research-team) section or the website's **Contact** section.
+**Academic supervisors**
+
+- Ms. Chathurangika Kahandawaarachchi: [chathurangika.k@sliit.lk](mailto:chathurangika.k@sliit.lk)
+- Mr. Uditha Dharmakeerthi: [uditha.d@sliit.lk](mailto:uditha.d@sliit.lk)
+
+**Student researchers**
+
+- N.K.B.N.N. Narasinghe: [it22217240@my.sliit.lk](mailto:it22217240@my.sliit.lk)
+- C.S. Didulantha: [it22051202@my.sliit.lk](mailto:it22051202@my.sliit.lk)
+- Muthukudaarachchi V.U: [it22126610@my.sliit.lk](mailto:it22126610@my.sliit.lk)
+- D.M.N.T. Senevirathna: [it22151506@my.sliit.lk](mailto:it22151506@my.sliit.lk)
+
+The website also includes a **Contact** section for project inquiries.
 
 ---
 
