@@ -98,7 +98,6 @@ section { scroll-margin-top: 130px; }
 }
 
 .brand {
-
   display: inline-flex;
   align-items: center;
   gap: 10px;
@@ -106,7 +105,6 @@ section { scroll-margin-top: 130px; }
   font-weight: 700; /* Bold */
   color: var(--text);
   white-space: nowrap;
-
 }
 
 
@@ -1305,3 +1303,45 @@ html[data-theme="dark"] .site-wrapper {
 .milestones-note { max-width:880px; margin:30px auto 0; text-align:center; color:var(--muted); font-size:13px; line-height:1.7; }
 @media (max-width:700px) { .milestones-section { padding:70px 0; } .milestone-timeline { margin-top:37px; } .milestone-timeline::before { left:21px; } .milestone-entry { grid-template-columns:44px minmax(0,1fr); gap:13px; margin-bottom:17px; } .milestone-marker { width:44px; height:44px; font-size:13px; } .milestone-card { padding:23px 18px; } .milestone-card-heading { gap:10px; } .milestone-icon { width:40px; height:40px; font-size:19px; } .milestone-phase { font-size:10px; letter-spacing:.75px; } .milestone-card p { font-size:13px; } }
 @media (prefers-reduced-motion:reduce) { .milestone-card { transition:none; } }
+
+
+/* ========================================
+   RESEARCH DOCUMENTS — RESPONSIVE CARDS
+   ======================================== */
+.documents-section { padding: 105px 0 115px; background: var(--bg); }
+.document-category { margin-top: 62px; }
+.document-category-heading { display:flex; align-items:center; gap:15px; margin-bottom:22px; }
+.document-category-icon { display:grid; place-items:center; flex-shrink:0; width:55px; height:55px; background:var(--bg-alt); border:1px solid var(--border); border-radius:16px; font-size:25px; }
+.document-category-heading h3 { color:var(--text); font-size:clamp(20px,2.4vw,25px); line-height:1.3; }
+.document-category-heading p { margin-top:5px; color:var(--muted); font-size:13px; line-height:1.5; }
+.documents-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:20px; }
+.document-card { display:flex; flex-direction:column; min-width:0; padding:30px; background:var(--surface); border:1px solid var(--border); border-radius:20px; transition:border-color .2s,transform .2s; }
+.document-card:hover { transform:translateY(-3px); border-color:var(--primary); }
+.document-card-top { display:flex; justify-content:space-between; align-items:center; gap:12px; margin-bottom:24px; }
+.document-icon { display:grid; place-items:center; background:var(--bg-alt); width:56px; height:56px; border-radius:15px; font-size:27px; }
+.document-status { padding:8px 12px; border:1px solid var(--border); border-radius:999px; color:var(--muted); background:var(--bg-alt); font-size:11px; font-weight:750; white-space:nowrap; }
+.document-status.available { color:var(--primary); }
+.document-card h4 { color:var(--text); font-size:19px; line-height:1.4; margin-bottom:10px; }
+.document-card > p { color:var(--muted); font-size:13px; line-height:1.8; margin-bottom:15px; flex:1; }
+.document-id { display:block; color:var(--primary); font-size:12px; font-weight:700; margin-bottom:16px; }
+.document-actions { display:flex; flex-wrap:wrap; align-items:center; gap:10px; margin-top:auto; padding-top:16px; border-top:1px solid var(--border); }
+.document-btn { display:inline-flex; justify-content:center; align-items:center; min-height:42px; border-radius:10px; padding:10px 15px; font-size:13px; font-weight:700; transition:transform .2s; }
+.document-btn:hover { transform:translateY(-2px); }
+.document-btn:focus-visible { outline:3px solid var(--primary); outline-offset:3px; }
+.document-btn-primary { background:var(--primary); color:#061727; }
+.document-btn-secondary { background:var(--bg-alt); color:var(--text); border:1px solid var(--border); }
+.document-unavailable { display:inline-block; padding:10px 0; font-size:12px; color:var(--muted); }
+@media(max-width:700px) { .documents-section { padding:70px 0; } .document-category { margin-top:42px; } .documents-grid { grid-template-columns:1fr; gap:16px; } .document-card { padding:24px 20px; } .document-category-icon { width:47px; height:47px; font-size:22px; } }
+@media(prefers-reduced-motion:reduce) { .document-card,.document-btn { transition:none; } }
+
+
+/* Project Gantt chart and schedule dates */
+.milestone-date { display:inline-block; margin:0 0 13px; padding:7px 12px; background:var(--bg-alt); color:var(--primary); border:1px solid var(--border); border-radius:9px; font-size:12px; font-weight:750; line-height:1.6; }
+.gantt-display { max-width:800px; margin:38px auto 0; padding:22px; background:var(--surface); border:1px solid var(--border); border-radius:20px; text-align:center; }
+.gantt-heading { margin-bottom:20px; }
+.gantt-heading h3 { color:var(--text); font-size:23px; margin-bottom:7px; }
+.gantt-heading p { color:var(--muted); font-size:13px; line-height:1.65; }
+.gantt-display a { display:block; max-width:720px; margin:0 auto; overflow:hidden; border-radius:12px; }
+.gantt-display img { display:block; width:100%; max-width:720px; height:auto; object-fit:contain; margin:0 auto; }
+.gantt-display a:focus-visible { outline:3px solid var(--primary); outline-offset:3px; }
+@media(max-width:700px) { .gantt-display { padding:12px; margin-top:29px; } .gantt-display a, .gantt-display img { max-width:100%; } .gantt-heading h3 { font-size:20px; } .milestone-date { font-size:11px; } }
