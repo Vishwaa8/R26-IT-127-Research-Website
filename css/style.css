@@ -99,9 +99,13 @@ section { scroll-margin-top: 130px; }
 
 .brand {
 
-  display: inline-flex; align-items: center; gap: 10px;
-
-  font-size: 21px; font-weight: 400; color: var(--text); white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 21px;
+  font-weight: 700; /* Bold */
+  color: var(--text);
+  white-space: nowrap;
 
 }
 
@@ -1278,3 +1282,26 @@ html[data-theme="dark"] .site-wrapper {
 @media (max-width:1000px) { .domain-process { grid-template-columns:repeat(3,minmax(0,1fr)); } .domain-feature { grid-template-columns:1fr; } }
 @media (max-width:700px) { .domain-section { padding:70px 0; } .domain-feature { padding:25px; gap:25px; } .domain-challenge-grid,.domain-insights,.domain-research-grid { grid-template-columns:1fr; gap:15px; } .domain-process { grid-template-columns:repeat(2,minmax(0,1fr)); } .domain-subheading { margin-top:48px; } .domain-outcome-panel { margin-top:48px; padding:26px; flex-direction:column; align-items:stretch; } .domain-outcome-panel .btn { width:100%; } }
 @media (max-width:420px) { .domain-process { grid-template-columns:1fr; } .domain-pillars { gap:9px; } .domain-pillars span { padding:17px 8px; font-size:12px; } }
+
+
+/* ========================================
+   RESEARCH MILESTONES · RESPONSIVE TIMELINE
+   ======================================== */
+.milestones-section { padding: 100px 0 110px; background: var(--bg-alt); }
+.milestone-timeline { position: relative; max-width: 980px; margin: 58px auto 0; }
+.milestone-timeline::before { content: ""; position: absolute; top: 26px; bottom: 70px; left: 28px; width: 2px; background: var(--border); }
+.milestone-entry { position: relative; display: grid; grid-template-columns: 58px minmax(0,1fr); gap: 25px; align-items: start; margin-bottom: 23px; }
+.milestone-marker { z-index:1; display:grid; place-items:center; width:56px; height:56px; border-radius:50%; border:2px solid var(--primary); background:var(--surface); color:var(--primary); font-weight:800; font-size:16px; box-shadow:0 6px 22px rgba(0,0,0,.04); }
+.milestone-card { padding:30px 34px; border:1px solid var(--border); border-radius:20px; background:var(--surface); box-shadow:0 12px 32px rgba(0,0,0,.025); transition:transform .2s,border-color .2s; }
+.milestone-card:hover { transform:translateY(-3px); border-color:var(--primary); }
+.milestone-card-heading { display:flex; align-items:center; gap:13px; margin-bottom:15px; }
+.milestone-icon { display:grid; place-items:center; flex-shrink:0; width:47px; height:47px; background:var(--bg-alt); border-radius:13px; font-size:22px; }
+.milestone-phase { color:var(--primary); font-size:11px; letter-spacing:1.3px; font-weight:800; }
+.milestone-card h3 { color:var(--text); font-size:clamp(19px,2.1vw,23px); line-height:1.35; margin-bottom:10px; }
+.milestone-card p { color:var(--muted); font-size:14px; line-height:1.85; }
+.milestone-link { display:inline-flex; align-items:center; gap:8px; margin-top:19px; font-size:13px; font-weight:700; color:var(--primary); }
+.milestone-link:hover { text-decoration:underline; }
+.milestone-pending { display:inline-flex; margin-top:20px; border-radius:999px; padding:9px 13px; background:var(--bg-alt); color:var(--muted); font-size:12px; font-weight:650; }
+.milestones-note { max-width:880px; margin:30px auto 0; text-align:center; color:var(--muted); font-size:13px; line-height:1.7; }
+@media (max-width:700px) { .milestones-section { padding:70px 0; } .milestone-timeline { margin-top:37px; } .milestone-timeline::before { left:21px; } .milestone-entry { grid-template-columns:44px minmax(0,1fr); gap:13px; margin-bottom:17px; } .milestone-marker { width:44px; height:44px; font-size:13px; } .milestone-card { padding:23px 18px; } .milestone-card-heading { gap:10px; } .milestone-icon { width:40px; height:40px; font-size:19px; } .milestone-phase { font-size:10px; letter-spacing:.75px; } .milestone-card p { font-size:13px; } }
+@media (prefers-reduced-motion:reduce) { .milestone-card { transition:none; } }
