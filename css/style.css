@@ -1236,3 +1236,45 @@ html[data-theme="dark"] .site-wrapper {
   .presentation-card { padding: 26px 22px; }
   .presentation-card h3 { font-size: 19px; }
 }
+
+
+/* ===== Research Domain - proposal-grounded redesign ===== */
+.domain-section { padding: 105px 0 115px; background: var(--bg); }
+.domain-feature { display:grid; grid-template-columns:1.5fr 1fr; gap:38px; align-items:center; padding:38px; border-radius:24px; background:var(--surface); border:1px solid var(--border); box-shadow:0 14px 40px rgba(0,0,0,.035); }
+.domain-overline,.domain-small-label { display:block; font-size:11px; font-weight:800; letter-spacing:1.6px; color:var(--primary); margin-bottom:13px; }
+.domain-feature h3 { font-size:clamp(24px,3vw,35px); line-height:1.25; color:var(--text); margin-bottom:17px; }
+.domain-feature p,.domain-subheading p { font-size:14px; line-height:1.8; color:var(--muted); }
+.domain-pillars { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:13px; }
+.domain-pillars span { padding:23px 12px; min-height:88px; display:grid; place-items:center; text-align:center; font-size:13px; font-weight:750; color:var(--primary); background:var(--bg-alt); border:1px solid var(--border); border-radius:16px; }
+.domain-subheading { margin:70px 0 25px; }
+.domain-subheading h3 { color:var(--text); margin:10px 0 12px; font-size:clamp(25px,3vw,32px); letter-spacing:-.5px; }
+.domain-challenge-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:20px; }
+.domain-challenge,.domain-insight-card,.domain-research-card { background:var(--surface); border:1px solid var(--border); border-radius:20px; padding:28px; min-width:0; transition:transform .2s,border-color .2s; }
+.domain-challenge:hover,.domain-insight-card:hover,.domain-research-card:hover { transform:translateY(-4px); border-color:var(--primary); }
+.domain-challenge-icon { display:grid; place-items:center; width:52px; height:52px; background:var(--bg-alt); border-radius:14px; font-size:25px; margin-bottom:21px; }
+.domain-challenge h4,.domain-insight-card h4,.domain-research-card h4 { color:var(--text); font-size:18px; line-height:1.45; margin-bottom:12px; }
+.domain-challenge p,.domain-insight-card p,.domain-research-card p { color:var(--muted); font-size:13px; line-height:1.85; }
+.domain-insights { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:20px; }
+.domain-insight-card { padding:32px; }
+.domain-research-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:22px; }
+.domain-research-card { display:flex; flex-direction:column; padding:30px; }
+.domain-research-top { display:flex; justify-content:space-between; align-items:center; margin-bottom:21px; }
+.domain-research-icon { display:grid; place-items:center; background:var(--bg-alt); width:56px; height:56px; border-radius:15px; font-size:28px; }
+.domain-research-number { color:var(--muted); font-size:13px; font-weight:800; }
+.domain-research-card p { flex:1; }
+.domain-research-tags { display:flex; flex-wrap:wrap; gap:7px; margin:22px 0; }
+.domain-research-tags span { background:var(--bg-alt); color:var(--primary); border:1px solid var(--border); border-radius:999px; padding:7px 10px; font-size:11px; font-weight:700; }
+.domain-research-owner { color:var(--text); font-size:12px; font-weight:750; padding-top:15px; border-top:1px solid var(--border); }
+.domain-process { display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:12px; }
+.domain-process-step { padding:23px 14px; border-radius:16px; background:var(--surface); border:1px solid var(--border); display:flex; flex-direction:column; gap:12px; }
+.domain-process-step > span { color:var(--primary); font-size:20px; font-weight:800; }
+.domain-process-step strong { color:var(--text); font-size:14px; }
+.domain-process-step small { color:var(--muted); font-size:12px; line-height:1.6; }
+.domain-outcome-panel { display:flex; justify-content:space-between; align-items:center; gap:28px; margin-top:70px; padding:38px; border:1px solid var(--border); border-radius:23px; background:var(--bg-alt); }
+.domain-outcome-panel > div { max-width:740px; }
+.domain-outcome-panel h3 { font-size:clamp(24px,3vw,31px); margin:12px 0; color:var(--text); }
+.domain-outcome-panel p { color:var(--muted); font-size:14px; line-height:1.8; }
+.domain-outcome-panel .btn { flex-shrink:0; text-align:center; }
+@media (max-width:1000px) { .domain-process { grid-template-columns:repeat(3,minmax(0,1fr)); } .domain-feature { grid-template-columns:1fr; } }
+@media (max-width:700px) { .domain-section { padding:70px 0; } .domain-feature { padding:25px; gap:25px; } .domain-challenge-grid,.domain-insights,.domain-research-grid { grid-template-columns:1fr; gap:15px; } .domain-process { grid-template-columns:repeat(2,minmax(0,1fr)); } .domain-subheading { margin-top:48px; } .domain-outcome-panel { margin-top:48px; padding:26px; flex-direction:column; align-items:stretch; } .domain-outcome-panel .btn { width:100%; } }
+@media (max-width:420px) { .domain-process { grid-template-columns:1fr; } .domain-pillars { gap:9px; } .domain-pillars span { padding:17px 8px; font-size:12px; } }
