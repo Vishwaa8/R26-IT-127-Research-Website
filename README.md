@@ -63,7 +63,7 @@ The overall research explores how AI, real-time operational information, predict
 - **Research Overview:** Introduction to all four components.
 - **Research Domain:** Problem background, research gaps, proposed contributions, methodology, and expected outcomes.
 - **Research Milestones:** Planned project stages and a compact, clickable Gantt chart.
-- **Research Documents:** Project Charter, individual research proposals, and four individual theses with View PDF and Download options.
+- **Research Documents:** Project Charter, individual research proposals, four individual theses, and the group thesis with View PDF and Download options.
 - **Presentations:** Proposal, PP1, and PP2 presentation PDFs; final presentation marked as forthcoming until available.
 - **Research Team:** Supervisor, co-supervisor, and all four student researchers, including profile photographs.
 - **Contact:** Supervisor and researcher email contacts.
@@ -107,10 +107,12 @@ R26-IT-127-Research-Website/
 │   ├── project-charter/
 │   │   └── project-charter.pdf
 │   ├── proposals/
+│   │   ├── narasinghe-proposal.pdf
 │   │   ├── didulantha-proposal.pdf
 │   │   ├── muthukudaarachchi-proposal.pdf
 │   │   └── senevirathna-proposal.pdf
 │   └── thesis/
+│       ├── group-thesis.pdf
 │       ├── narasinghe-thesis.pdf
 │       ├── didulantha-thesis.pdf
 │       ├── muthukudaarachchi-thesis.pdf
@@ -123,7 +125,7 @@ R26-IT-127-Research-Website/
 └── README.md
 ```
 
-**Important:** The tree above is the **intended updated structure** after adding all four thesis PDFs. Ensure the files actually exist before publishing or submitting the website. Paths and filename capitalization must match references in `index.html` exactly. Narasinghe's individual proposal and the final presentation are not listed as available because their files have not been confirmed.
+**Important:** The tree above is the **intended updated structure** after adding all four thesis PDFs. Ensure the files actually exist before publishing or submitting the website. Paths and filename capitalization must match references in `index.html` exactly. The final presentation is not listed as available because its file has not been confirmed.
 
 ## Live Website
 
@@ -158,7 +160,11 @@ No `npm install`, database setup, or build command is necessary.
 - [C.S. Didulantha — Proposal](documents/proposals/didulantha-proposal.pdf)
 - [Muthukudaarachchi V.U — Proposal](documents/proposals/muthukudaarachchi-proposal.pdf)
 - [D.M.N.T. Senevirathna — Proposal](documents/proposals/senevirathna-proposal.pdf)
-- **N.K.B.N.N. Narasinghe — Proposal:** Pending availability.
+- [N.K.B.N.N. Narasinghe — Proposal](documents/proposals/narasinghe-proposal.pdf)
+
+### Group Thesis
+
+- [R26-IT-127 — Group Thesis](documents/thesis/group-thesis.pdf)
 
 ### Individual Theses
 
