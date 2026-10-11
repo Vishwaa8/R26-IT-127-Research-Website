@@ -166,7 +166,7 @@ No `npm install`, database setup, or build command is necessary.
 
 - [R26-IT-127 — Group Thesis](documents/thesis/group-thesis.pdf)
 
-### Individual Theses
+### Individual Thesis
 
 - [N.K.B.N.N. Narasinghe — Thesis](documents/thesis/narasinghe-thesis.pdf)
 - [C.S. Didulantha — Thesis](documents/thesis/didulantha-thesis.pdf)
