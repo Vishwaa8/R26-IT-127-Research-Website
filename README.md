@@ -40,9 +40,9 @@ The overall research explores how AI, real-time operational information, predict
 
 | No. | Individual Research Component | Researcher | Student ID |
 |:---:|---|---|---|
-| 01 | **Multi-Objective Train Scheduling and Capacity Management** | N.K.B.N.N. Narasinghe | IT22217240 |
+| 01 | **Advanced Intelligent Ticket Fraud Detection and Risk-Aware Passenger Verification** | Muthukudaarachchi V.U | IT22126610 |
 | 02 | **Intelligent Real-Time Train Tracking and Probabilistic Delay Prediction** | C.S. Didulantha | IT22051202 |
-| 03 | **Advanced Intelligent Ticket Fraud Detection and Risk-Aware Passenger Verification** | Muthukudaarachchi V.U | IT22126610 |
+| 03 | **Multi-Objective Train Scheduling and Capacity Management** | N.K.B.N.N. Narasinghe | IT22217240 |
 | 04 | **Spatio-Temporal Demand Forecasting and Adaptive Seat Allocation** | D.M.N.T. Senevirathna | IT22151506 |
 
 ### Research Areas
@@ -64,7 +64,7 @@ The overall research explores how AI, real-time operational information, predict
 - **Research Domain:** Problem background, research gaps, proposed contributions, methodology, and expected outcomes.
 - **Research Milestones:** Planned project stages and a compact, clickable Gantt chart.
 - **Research Documents:** Project Charter, individual research proposals, four individual theses, and the group thesis with View PDF and Download options.
-- **Presentations:** Proposal, PP1, and PP2 presentation PDFs; final presentation marked as forthcoming until available.
+- **Presentations:** Proposal, PP1, PP2, and Final Presentation PDFs with View PDF and Download options.
 - **Research Team:** Supervisor, co-supervisor, and all four student researchers, including profile photographs.
 - **Contact:** Supervisor and researcher email contacts.
 - **Responsive Design:** Desktop, tablet, and mobile layouts.
@@ -100,7 +100,7 @@ R26-IT-127-Research-Website/
 │   │   ├── didulantha.jpg
 │   │   ├── muthukudaarachchi.PNG
 │   │   └── senevirathna.jpg
-│   └── icons/                 # Optional; may be empty or omitted
+│   └── icons/                 
 ├── css/
 │   └── style.css
 ├── documents/
@@ -120,12 +120,13 @@ R26-IT-127-Research-Website/
 ├── presentations/
 │   ├── proposal.pdf
 │   ├── pp1.pdf
-│   └── pp2.pdf
+│   ├── pp2.pdf
+│   └── final-presentation.pdf
 ├── index.html
 └── README.md
 ```
 
-**Important:** The tree above is the **intended updated structure** after adding all four thesis PDFs. Ensure the files actually exist before publishing or submitting the website. Paths and filename capitalization must match references in `index.html` exactly. The final presentation is not listed as available because its file has not been confirmed.
+**Important:** The tree above is the **intended updated structure** after adding all four thesis PDFs. Ensure the files actually exist before publishing or submitting the website. Paths and filename capitalization must match references in `index.html` exactly. The final presentation is available at `presentations/final-presentation.pdf`.
 
 ## Live Website
 
@@ -166,7 +167,7 @@ No `npm install`, database setup, or build command is necessary.
 
 - [R26-IT-127 — Group Thesis](documents/thesis/group-thesis.pdf)
 
-### Individual Thesis
+### Individual Theses
 
 - [N.K.B.N.N. Narasinghe — Thesis](documents/thesis/narasinghe-thesis.pdf)
 - [C.S. Didulantha — Thesis](documents/thesis/didulantha-thesis.pdf)
@@ -178,7 +179,7 @@ No `npm install`, database setup, or build command is necessary.
 - [Proposal Presentation](presentations/proposal.pdf)
 - [Progress Presentation 1 (PP1)](presentations/pp1.pdf)
 - [Progress Presentation 2 (PP2)](presentations/pp2.pdf)
-- **Final Presentation:** Coming soon.
+- [Final Presentation](presentations/final-presentation.pdf)
 
 > **Publication note:** Only publish proposals, theses, and other academic materials after confirming permission from their authors and compliance with university requirements. If an uploaded thesis is still a draft, identify it as a *draft* rather than a formally approved final thesis. The links above will work only when the corresponding files exist in the repository.
 
