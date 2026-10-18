@@ -40,9 +40,9 @@ The overall research explores how AI, real-time operational information, predict
 
 | No. | Individual Research Component | Researcher | Student ID |
 |:---:|---|---|---|
-| 01 | **Advanced Intelligent Ticket Fraud Detection and Risk-Aware Passenger Verification** | Muthukudaarachchi V.U | IT22126610 |
+| 01 | **Multi-Objective Train Scheduling and Capacity Management** | N.K.B.N.N. Narasinghe | IT22217240 |
 | 02 | **Intelligent Real-Time Train Tracking and Probabilistic Delay Prediction** | C.S. Didulantha | IT22051202 |
-| 03 | **Multi-Objective Train Scheduling and Capacity Management** | N.K.B.N.N. Narasinghe | IT22217240 |
+| 03 | **Advanced Intelligent Ticket Fraud Detection and Risk-Aware Passenger Verification** | Muthukudaarachchi V.U | IT22126610 |
 | 04 | **Spatio-Temporal Demand Forecasting and Adaptive Seat Allocation** | D.M.N.T. Senevirathna | IT22151506 |
 
 ### Research Areas
