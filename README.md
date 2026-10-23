@@ -63,7 +63,7 @@ The overall research explores how AI, real-time operational information, predict
 - **Research Overview:** Introduction to all four components.
 - **Research Domain:** Problem background, research gaps, proposed contributions, methodology, and expected outcomes.
 - **Research Milestones:** Planned project stages and a compact, clickable Gantt chart.
-- **Research Documents:** Project Charter, individual research proposals, four individual theses, and the group thesis with View PDF and Download options.
+- **Research Documents:** Project Charter, Topic Assessment Form (TAF), Research Paper, individual research proposals, four individual theses, and the group thesis with View PDF and Download options.
 - **Presentations:** Proposal, PP1, PP2, and Final Presentation PDFs with View PDF and Download options.
 - **Research Team:** Supervisor, co-supervisor, and all four student researchers, including profile photographs.
 - **Contact:** Supervisor and researcher email contacts.
@@ -106,6 +106,10 @@ R26-IT-127-Research-Website/
 ├── documents/
 │   ├── project-charter/
 │   │   └── project-charter.pdf
+│   ├── topic-assessment/
+│   │   └── taf.pdf
+│   ├── research-paper/
+│   │   └── research-paper.pdf
 │   ├── proposals/
 │   │   ├── narasinghe-proposal.pdf
 │   │   ├── didulantha-proposal.pdf
@@ -154,6 +158,8 @@ No `npm install`, database setup, or build command is necessary.
 ### Project Documentation
 
 - [Project Charter](documents/project-charter/project-charter.pdf)
+- [Topic Assessment Form (TAF)](documents/topic-assessment/taf.pdf)
+- [Research Paper](documents/research-paper/research-paper.pdf)
 - [Project Gantt Chart](assets/images/research-gantt-chart.jpg)
 
 ### Individual Research Proposals
